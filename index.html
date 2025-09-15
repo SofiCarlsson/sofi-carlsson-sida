@@ -4,15 +4,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Hem</a>
-            <a href="about.html">Om mig</a>
-            <a href="projects.html">Mina projekt</a>
+
+    <!--Navbar meny-->
+    
+        <nav class="navbar">
+            <div class="navbar_container">
+            <a href="#home" id="navbar_logo">Hej</a>
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="#home" class="navbar_links" id="home-page">Home</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="#about" class="navbar_links" id="about-page">About</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="#projects" class="navbar_links" id="projects-page">Projects</a>
+                </li>
+            </ul>
         </nav>
-    </header>
     <h1>Välkommen till Sofi Carlssons sida!</h1>
     <p>Här kan du hitta information om Sofi Carlsson.</p>
 </body>
