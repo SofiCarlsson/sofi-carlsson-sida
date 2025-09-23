@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     scroll-behavior: smooth;
+    color: #b6cae5;
 }
 
 body{
@@ -12,13 +13,13 @@ body{
     padding: 0;
     margin-top: 0px;
     font-family: Arial, sans-serif;
-    background-color: #ffffff;
+    background-color: #081116;
     text-align: center;
 }
 
 .navbar{
     /*background: rgba(136, 221, 255, 0.917);*/
-    background: linear-gradient(to bottom, #9fdff2, #203ec3);
+    background: linear-gradient(to bottom, #613182, #50468C);
 
     height: 80px;
     display: flex; /* Gör navbaren till en flexbox */
@@ -109,7 +110,7 @@ body{
     }
 
     .navbar_menu.active{
-        background: rgba(19, 169, 229, 0.917);
+        background: linear-gradient(to bottom, #613182, #50468C);
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
