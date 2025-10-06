@@ -5,11 +5,20 @@
 .topnav{
     background-color: #613182;
     overflow: hidden;
+    display: flex; /*För att få det centrerat*/
+    justify-content: center;/*För att få det centrerat*/
+    align-items: center;/*För att få det centrerat*/
+    height: 60px;
+
 }
+
+
 
 /* För att styla länkarna i menyn */
 .topnav a {
-    float: left;
+    display: flex; /*innan var det float: left*/
+    align-items: center;/*För att få det centrerat*/
+    line-height: 60px;
     display: block;
     color: aliceblue;
     text-align: center;
