@@ -1,66 +1,59 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+   <link rel="stylesheet" href="styles.css">
+   <script src="script.js" defer></script>
+   <title>Sofis CV sida</title>
 </head>
 <body>
+   <div class="topnav" id="myTopnav">
+        <a href="#home" class="active"> 
+            <i class="fa-solid fa-home"></i> Hem</a>
+        <a href="#about"> 
+            <i class="fa-solid fa-user"></i> Om</a>
+        <a href="#projects">
+            <i class="fa-solid fa-clipboard"></i> Projekt</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+        </a>
+</div>
 
-    <!--Navbar meny-->
-    
-        <nav class="navbar">
-            <div class="navbar_container">
-            <a href="#home" id="navbar_logo">Sofis sida</a>
-            <div class="navbar_toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="navbar_menu">
-                <li class="navbar_item">
-                    <a href="#home" class="navbar_links" id="home-page">Home</a>
-                </li>
-                <li class="navbar_item">
-                    <a href="#about" class="navbar_links" id="about-page">About</a>
-                </li>
-                <li class="navbar_item">
-                    <a href="#projects" class="navbar_links" id="projects-page">Projects</a>
-                </li>
-            </ul>
-        </nav>
-    <h1>Välkommen till Sofi Carlssons sida!</h1>
-    <p>Här kan du hitta information om Sofi Carlsson.</p>
 
-    <div class="gridContainer">
-        <div class="item1" id="home">
-            <h2>Home</h2>
-            <p>Detta är startsidan. Här hittar du en översikt över vad sidan handlar om.</p>
-        </div>
-        <div class="item2" id="about">
-            <h2>About</h2>
-            <p>Här kan du läsa mer om Sofi Carlsson, hennes bakgrund och erfarenheter.</p>
-        </div>
-        <div class="item3" id="projects">
-            <h2>Projects</h2>
-            <p>Här kan du se några av Sofi Carlssons projekt och arbeten.</p>
-            <div class="projectscont">
-                <div class="project">
-                    <h3>Projekt 1</h3>
-                    <p>Beskrivning av projekt 1.</p>
-                </div>
-                <div class="project">
-                    <h3>Projekt 2</h3>
-                    <p>Beskrivning av projekt 2.</p>
-                </div>
-                <div class="project">
-                    <h3>Projekt 3</h3>
-                    <p>Beskrivning av projekt 3.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+<h1>Välkommen till Sofi Carlssons sida!</h1>
+<p>Här kan du hitta information om Sofi Carlsson.</p>
+
+
+<div class="gridContainer">
+   <div class="item1" id="home">
+       <h2>Hem</h2>
+       <p>Detta är startsidan. Här hittar du en översikt över vad sidan handlar om.</p>
+   </div>
+   <div class="item2" id="about">
+       <h2>Om</h2>
+       <p>Här kan du läsa mer om Sofi Carlsson, hennes bakgrund och erfarenheter.</p>
+   </div>
+   <div class="item3" id="projects">
+       <h2>Projekt</h2>
+       <p>Här kan du se några av Sofi Carlssons projekt och arbeten.</p>
+       <div class="projectscont">
+           <div class="project">
+               <h3>Projekt 1</h3>
+               <p>Beskrivning av projekt 1.</p>
+           </div>
+           <div class="project">
+               <h3>Projekt 2</h3>
+               <p>Beskrivning av projekt 2.</p>
+           </div>
+           <div class="project">
+               <h3>Projekt 3</h3>
+               <p>Beskrivning av projekt 3.</p>
+           </div>
+       </div>
+   </div>
+</div>
 </body>
 </html>
+

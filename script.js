@@ -1,7 +1,11 @@
-// För att toggla mobilmenyn.
-const mobileMenu = document.getElementById('mobile-menu');
-const navMenu = document.querySelector('.navbar_menu');
 
-mobileMenu.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-});
+// För att toggla menyn 
+
+function myFunction() {
+   var x = document.getElementById("myTopnav");
+   if (x.className === "topnav") {
+     x.className += " responsive";
+   } else {
+     x.className = "topnav";
+   }
+ }
