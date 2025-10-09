@@ -8,7 +8,7 @@
     display: flex; /*För att få det centrerat*/
     justify-content: flex-start;/*För att få det ill vänster (loggan + meny)*/
     align-items: center;/*För att få det centrerat*/
-    height: 120px;
+    height: 100px;
 
 }
 
@@ -27,7 +27,7 @@
 
 /* För när man håller över texten */
 .topnav a:hover {
-    background-color: #ddd;
+    /*background-color: #50468C; Behövs inte*/
     color: #081116;
 }
 
@@ -50,39 +50,59 @@
 
   }
 
-
-
-
 /* För hamburgarmenyikonen */
 .topnav .icon {
     display: none;
     margin-left: auto; /*För att få hamburgarmenyikonen till höger*/
+    cursor: pointer;
 }
+
 
 /* För mobilskärm döljs allt förutom Hem och staplas på varandra*/ 
 @media screen and (max-width: 600px) {
-  .topnav {
-    justify-content: flex-start; /*För att få loggan till vänster på mobil*/
-  } 
   
-  .topnav a:not(:first-child) {display: none;}
-   .topnav a.icon {
-     float: none;
-     margin-left: auto;
-     display: block;
-     position: static;
-   }
- }
+  .topnav {
+    height: 100px;
+    flex-wrap: wrap; /* Gör så att innehållet kan brytas till nästa rad */
+  }
 
- /* Visar menyn vertikal istället för horisontell när användaren tycker på hamburgarmenyikonen*/
- @media screen and (max-width: 600px) {
-   .topnav.responsive {position: relative;}
-   .topnav.responsive a.icon {
-     margin-left: auto;
-     position: static;
-   }
-   .topnav.responsive a {
+  .topnav a:not(:last-child) {
+    display: none;
+  }
+  
+  .topnav .icon {
      display: block;
-     text-align: left;
+     margin-left: right;
    }
+
+  .topnav.responsive {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
  }
+ 
+ .topnav.responsive .logo-container {
+    margin-bottom: 0;
+  }
+
+  .topnav.responsive a {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: #613182;
+  }
+
+  /*Denna behövs för att alltid visa menyikonen även om den är öppen*/
+  .topnav.responsive .icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: auto;
+    background: none;
+    border: none;
+  }
+  /*Visar alla meny länkar utom den sista som är ikonen*/
+  .topnav.responsive a:not(:last-child) {
+    display: block;
+  }
+}
