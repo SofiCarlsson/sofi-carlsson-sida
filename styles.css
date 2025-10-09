@@ -34,7 +34,7 @@
 /* För när man har tryckt på den blir den aktiv*/
 .topnav a:active {
     background-color: #50468C;
-    color: #8db5cd;
+    /*color: #8db5cd;*/
 }
 .topnav .logo {
     height: 90px; /*Storleken på logotypen*/
