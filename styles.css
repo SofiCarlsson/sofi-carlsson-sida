@@ -5,16 +5,16 @@
 .topnav{
     background-color: #613182;
     overflow: hidden;
-    display: flex; /*För att få det centrerat*/
-    justify-content: flex-start;/*För att få det ill vänster (loggan + meny)*/
-    align-items: center;/*För att få det centrerat*/
+    display: flex; /* För att få det centrerat */
+    justify-content: flex-start;/* För att få det ill vänster (loggan + meny) */
+    align-items: center;/* För att få det centrerat */
     height: 100px;
 
 }
 
 /* För att styla länkarna i menyn */
 .topnav a {
-    display: flex; /*innan var det float: left*/
+    display: flex; /* Innan var det float: left */
     align-items: center;/*För att få det centrerat*/
     line-height: 60px;
     display: block;
@@ -27,24 +27,22 @@
 
 /* För när man håller över texten */
 .topnav a:hover {
-    /*background-color: #50468C; Behövs inte*/
     color: #081116;
 }
 
 /* För när man har tryckt på den blir den aktiv*/
 .topnav a:active {
     background-color: #50468C;
-    /*color: #8db5cd;*/
 }
 .topnav .logo {
-    height: 90px; /*Storleken på logotypen*/
-    margin-right: 50px; /*Avståndet mellan logotypen och menyn*/
+    height: 90px; 
+    margin-right: 50px; /* Avståndet mellan logotypen och menyn */
     display: flex;
     align-items: center;
   }
 
 .topnav .logo img{
-    height: 100%; /*Storleken på logotypen*/
+    height: 100%;
     width: auto;
     display: block;
 
@@ -56,15 +54,25 @@
     margin-left: auto; /*För att få hamburgarmenyikonen till höger*/
     cursor: pointer;
 }
+
+
 /* För Grid layout för innehållet på sidan */
 .gridContainer  {
     display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Så att hem och Om mig kommer brevid varandra */
+    gap: 32px; /* Avstånd mellan korten */
+    padding: 32px;
+    justify-items: stretch;/* Gör så att gird item fyller hela containern */
 }
-
+/* Stil för varje grid item dvs, de ljuslila */
 .grid-item {
+    width: 100%;
     padding: 20px;
     background-color: rgb(226, 231, 241);
-    margin: 20px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     }
 
   .item1{
@@ -82,6 +90,38 @@
     grid-column: 1 / span 2;
   }
 
+  /* Stil för projekten */
+  .project-list{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px; /* Avstånd mellan korten */
+    padding: 20px;
+    width: 100%;
+  }
+
+  .project{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+
+  .project img{
+    width: 100%;
+    max-width: none;
+    height: 500px;
+    object-fit: contain;
+  }
+
+  .project a {
+    margin-top: 10px;
+    text-decoration: none;
+    color: #00458e;
+}
+
+/* Fixa för knappen */
+/* ........... */
 
 /* För mobilskärm döljs allt förutom Hem och staplas på varandra*/ 
 @media screen and (max-width: 600px) {
@@ -126,8 +166,23 @@
     background: none;
     border: none;
   }
-  /*Visar alla meny länkar utom den sista som är ikonen*/
+
+  /* Visar alla meny länkar utom den sista som är ikonen */
   .topnav.responsive a:not(:last-child) {
     display: block;
+  }
+
+  .gridContainer {
+    grid-template-columns: 1fr; /* En kolumn på mobil */
+  }
+
+  .item1, .item2, .item3 {
+    grid-column: 1; /* Alla objekt tar upp hela raden */
+  }
+
+  .project img{
+    width: 100%;
+    max-width: 320px;
+    height: auto;
   }
 }
