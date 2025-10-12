@@ -60,7 +60,7 @@
 .gridContainer  {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Så att hem och Om mig kommer brevid varandra */
-    gap: 32px; /* Avstånd mellan korten */
+    gap: 60px; /* Avstånd mellan korten */
     padding: 32px;
     justify-items: stretch;/* Gör så att gird item fyller hela containern */
 }
@@ -69,7 +69,6 @@
     width: 100%;
     padding: 20px;
     background-color: rgb(226, 231, 241);
-    margin: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,7 +93,7 @@
   .project-list{
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px; /* Avstånd mellan korten */
+    gap: 20px; /* Avstånd mellan de olika projekten */
     padding: 20px;
     width: 100%;
   }
