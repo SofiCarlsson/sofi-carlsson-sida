@@ -1,6 +1,12 @@
-.body{
-    color: #f8f8f8;
-}
+body{
+    background-color: #f8f8f8;
+    font-family: "Lato", "Inter", sans-serif;
+  }
+
+h1, h2, h3, p {
+    text-align: center;
+    color: #081116;
+    } 
 
 .topnav{
     background-color: #613182;
@@ -113,11 +119,29 @@
     object-fit: contain;
   }
 
-  .project a {
+  a {
+    text-decoration: none;
+    padding: 1rem;
+    }
+  a:hover {
+    background-color: #a582e8;
+    }
+  .button-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    }
+
+.project-link-button {
+  color:#081116;
+  background-color: #c4adf0;
+  border-radius: 10px;
+  }
+  /*.project a {
     margin-top: 10px;
     text-decoration: none;
     color: #00458e;
-}
+}*/
 
 /* Fixa för knappen */
 /* ........... */
